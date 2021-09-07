@@ -15,18 +15,15 @@ Proteus版本8.9
 #### keil+proteus led流水灯实验 (万事开头难) 
 
 ```
-流水灯项目目录
-    ├── FlashLED.DSN    # proteus工程
-    ├── FlashLED.PWI
-    ├── Last\ Loaded\ FlashLED.DBK
-    ├── Thumbs.db
-    └── flashled.bmp
-    ├── Keil            # keil工程
-    │  ├── FlashLED
-    │  ├── FlashLED.M51
-    │  ├── FlashLED.Opt
-    │  ├── FlashLED.Uv2
-    │  ├── FlashLED.c
-    │  └── FlashLED.hex
+流水灯项目
+    ├── FlashLED.pdsprj        # proteus项目,版本8.9
+    ├── flash-led.md
+    └── keil
+        ├── FlashLED.uvopt     # keil c51,版本5.5
+        ├── FlashLED.uvproj
+        ├── Listings
+        │   ├── FlashLED.m51
+        │   └── flash_led.lst
+        └── flash_led.c
 ```
 [点击查看proteus仿真电路创建及keil软件编程说明](./流水灯/flash-led.md)
