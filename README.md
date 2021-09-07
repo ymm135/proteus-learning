@@ -1,4 +1,4 @@
-本仓库的所有内容都是为了更好的学习[自制CPU](https://github.com/ymm135/TD4-4BIT-CPU)知识准备的。  
+本仓库的所有内容都是为了更好的学习[自制CPU](https://github.com/ymm135/TD4-4BIT-CPU)而做的知识储备。  
 其中包含keil + proteus环境搭建、入门demo、电路元器件及基础知识学习、自制CPU的仿真电路等.
   
 #### keil+proteus环境搭建
@@ -12,7 +12,7 @@ Keil的安装一路Next就行了。接下来安装proteus，找到安装包，�
 Keil C51版本V5.5
 Proteus版本8.9
 
-#### keil+proteus led流水灯实验  
+#### keil+proteus led流水灯实验 (万事开头难) 
 
 ```
 流水灯项目目录
