@@ -1,0 +1,90 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    09/07/2021  14:26:49  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\flash_led.obj TO .\Objects\FlashLED PRINT (.\Listings\FlashLED.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\flash_led.obj (FLASH_LED)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\FlashLED (FLASH_LED)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     001AH     UNIT         ?PR?_DELAYMS?FLASH_LED
+            CODE    081AH     0019H     UNIT         ?PR?MAIN?FLASH_LED
+            CODE    0833H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\FlashLED (FLASH_LED)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?FLASH_LED
+
+?PR?MAIN?FLASH_LED
+  +--> ?PR?_DELAYMS?FLASH_LED
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\FlashLED (FLASH_LED)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        FLASH_LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0800H         PUBLIC        _DelayMS
+  C:081AH         PUBLIC        main
+  -------         PROC          _DELAYMS
+  D:0006H         SYMBOL        x
+  -------         DO            
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  09/07/2021  14:26:49  PAGE 2
+
+
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         5
+  C:0800H         LINE#         6
+  C:0800H         LINE#         8
+  C:080AH         LINE#         9
+  C:0819H         LINE#         10
+  -------         ENDPROC       _DELAYMS
+  -------         PROC          MAIN
+  C:081AH         LINE#         12
+  C:081AH         LINE#         13
+  C:081AH         LINE#         14
+  C:081DH         LINE#         15
+  C:081DH         LINE#         16
+  C:081DH         LINE#         17
+  C:0824H         LINE#         18
+  C:0831H         LINE#         19
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        FLASH_LED
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0033H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=66
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
