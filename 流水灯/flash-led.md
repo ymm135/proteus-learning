@@ -1,21 +1,26 @@
-基于Keil+Proteus流水灯实验,适合零基础的同学。**项目代码在根目录**, 也可以先参照
+基于Keil+Proteus流水灯实验,适合零基础的同学。**项目代码在流水灯文件夹下**, 也可以先参照
 [视频讲解](https://www.bilibili.com/video/BV1dv411h7vL?from=search&seid=6190284922334573491&spm_id_from=333.337.0.0)  
 
-效果展示 :japanese_goblin:
+效果展示 :japanese_goblin:  
 <img src="./../res/video/LED流水灯展示视频.gif" width="85%" height="85%" title="LED流水灯展示视频"></img>
 
 #### Proteus流水灯工程
-<img src="./../res/res-led-pro-1.png" width="85%" height="85%" title="创建工程"></img>
+<img src="./../res/res-led-pro-1.png" width="80%" height="80%" title="创建工程"></img>
 
 选择元器件(Pick图标),双击选中:
 * AT89C51
 * LED 
 * 220R 电阻
   
-<img src="./../res/res-led-pro-3.png" width="80%" height="80%" title="AT89C51"></img>
-<img src="./../res/res-led-pro-4.png" width="80%" height="80%" title="LED"></img>
+单片机选择  
+<img src="./../res/res-led-pro-3.png" width="80%" height="80%" title="AT89C51"></img>  
+LED选择黄色  
+<img src="./../res/res-led-pro-4.png" width="80%" height="80%" title="LED"></img>  
+选择220R的电阻  
 <img src="./../res/res-led-pro-5.png" width="80%" height="80%" title="220R"></img>
 
+* 接下来就开始设置布局:
+  
 1. 把元器件放到布局中，可以进行旋转、设置文本(右击编辑属性)，进行连线。等到电子与LED连接一组后，选中组，使用块复制，复制8组。
 2. 在侧边栏选择总线模式,连接总线，需要转弯的地方，先单击停止，再按住Ctrl连接目标点。把单片机的P0与LED都连接到总线上。
 3. 在侧边栏选择终端模式>>POWER,放置电源,把电阻的一端连接到电源正极，电流的流向如下:
