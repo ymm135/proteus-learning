@@ -37,19 +37,19 @@ LED选择黄色
 接下来都是默认选项，完成界面时，选择单片机
 <img src="./../res/res-led-keil-2.png" width="80%" height="80%" title="选择单片机"></img>
 
-选择No，不拷贝
-<img src="./../res/res-led-keil-3.png" width="80%" height="80%" title="选择No，不拷贝"></img>
+选择No，不拷贝  
+<img src="./../res/res-led-keil-3.png" width="40%" height="40%" title="选择No，不拷贝"></img>
 
 创建文件并保存为.c,并设置输出文件为hex  
 
-<img src="./../res/res-led-keil-7.png" width="80%" height="80%" title="添加新文件"></img>
+<img src="./../res/res-led-keil-7.png" width="55%" height="55%" title="添加新文件"></img>
   
-<img src="./../res/res-led-keil-6.png" width="80%" height="80%" title=".c文件"></img>
+<img src="./../res/res-led-keil-6.png" width="60%" height="60%" title=".c文件"></img>
   
-<img src="./../res/res-led-keil-8.png" width="80%" height="80%" title="输出格式为hex"></img>
+<img src="./../res/res-led-keil-8.png" width="60%" height="60%" title="输出格式为hex"></img>
 
 
-flash_led.c 代码文件
+flash_led.c 代码文件  
 ```
 #include<reg51.h>
 #include<intrins.h>
@@ -79,13 +79,13 @@ int main()
   
 ***
   
-Tips:
+Tips:  
   
-Keil查看单片机参数
-<img src="./../res/res-led-keil-10.png" width="80%" height="80%" title="res-pro-选择hex文件.png"></img>
+Keil查看单片机参数  
+<img src="./../res/res-led-keil-10.png" width="75%" height="75%" title="res-pro-选择hex文件.png"></img>
 
-Keil中文注释乱码问题
-<img src="./../res/res-led-keil-9.png" width="80%" height="80%" title="Keil中文注释乱码问题"></img>
+Keil中文注释乱码问题  
+<img src="./../res/res-led-keil-9.png" width="75%" height="75%" title="Keil中文注释乱码问题"></img>
   
-Proteus中颜色点
+Proteus中颜色点  
 > 在仿真图中,不同颜色的点所代表的意思: 红点--高电平 蓝点--低电平 黄点--短路 箭头--交流电瞬时电流方向
