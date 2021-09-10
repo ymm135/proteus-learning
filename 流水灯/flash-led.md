@@ -83,7 +83,9 @@ Tips:
   
 Keil查看单片机参数,这里晶振的评率为40,一般为12Mhz  
 <img src="./../res/res-led-keil-10.png" width="75%" height="75%" title="res-pro-选择hex文件.png"></img>
-
+  
+<img src="./../res/res-单片机目标参数.png" width="75%" height="75%" title="res-pro-选择hex文件.png"></img>
+  
 Keil中文注释乱码问题  
 <img src="./../res/res-led-keil-9.png" width="75%" height="75%" title="Keil中文注释乱码问题"></img>
   
