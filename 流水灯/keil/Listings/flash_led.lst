@@ -1,9 +1,9 @@
-C51 COMPILER V9.59.0.0   FLASH_LED                                                         09/07/2021 14:26:48 PAGE 1   
+C51 COMPILER V9.59.0.0   FLASH_LED                                                         10/03/2021 11:31:51 PAGE 1   
 
 
 C51 COMPILER V9.59.0.0, COMPILATION OF MODULE FLASH_LED
 OBJECT MODULE PLACED IN .\Objects\flash_led.obj
-COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE flash_led.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.EXE flash_led.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
                     -\flash_led.lst) TABS(2) OBJECT(.\Objects\flash_led.obj)
 
 line level    source
@@ -25,7 +25,7 @@ line level    source
   15   1        while(1)
   16   1        {
   17   2          DelayMS(250);
-  18   2          P0 = _crol_(P0, 1);
+  18   2          P0 = _crol_(P0, 1); //Ñ­»·×óÒÆ
   19   2        }
   20   1      }
 
