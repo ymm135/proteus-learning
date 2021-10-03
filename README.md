@@ -39,3 +39,7 @@ Proteus版本8.9
 * 实验八   [1602液晶显示实验]()
 * 实验九   [D/A转换实验]()
 * 实验十   [A/D转换实验]()
+
+<br>
+备注: 部分实验参考: [https://github.com/YAOYUKE/89C51](https://github.com/YAOYUKE/89C51)  
+

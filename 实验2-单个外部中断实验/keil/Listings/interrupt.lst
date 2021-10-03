@@ -1,0 +1,60 @@
+C51 COMPILER V9.59.0.0   INTERRUPT                                                         10/03/2021 16:21:15 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE INTERRUPT
+OBJECT MODULE PLACED IN .\Objects\interrupt.obj
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.EXE interrupt.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
+                    -\interrupt.lst) TABS(2) OBJECT(.\Objects\interrupt.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #define uchar unsigned char
+   3          
+   4          void Delay(unsigned int i)  //延迟函数, i位形式参数,不能赋初值
+   5          {
+   6   1        unsigned int j;
+   7   1        for( ; i > 0; i--)
+   8   1        for(j=0; j < 333; j--)   // 晶体振荡器位12MHz， j的选择与晶体振荡器频率有关
+   9   1        { ; }                     //空函数
+  10   1      }
+  11          
+  12          void main()                 //主函数
+  13          {
+  14   1        EA=1;                     //总中断允许
+  15   1        EX0=1;                    //允许外部中断0中断
+  16   1        IT0=1;                    //选择外部中断0为跳沿触发方式
+  17   1        while(1)
+  18   1        {
+  19   2          P1=0;                   //P1口的8只LED全亮
+  20   2        }
+  21   1      }
+  22          
+  23          void int0() interrupt 0 using 1   //外中断0的中断服务函数
+  24          {
+  25   1        uchar m;
+  26   1        EX0=0;
+  27   1        for(m=0;m<5;m++)
+  28   1        {
+  29   2          P1=0x0f;                   //低4位LED关，高4位LED亮
+  30   2          Delay(400);
+  31   2          P1=0xf0;                   //低4位LED亮，高4位LED灭
+  32   2          Delay(400);
+  33   2        }
+  34   1        
+  35   1        EX0=1;                        //中断返回前， 打开外部中断0中断  
+  36   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     98    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

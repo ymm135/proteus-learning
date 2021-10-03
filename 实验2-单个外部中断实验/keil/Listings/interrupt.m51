@@ -1,0 +1,112 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/03/2021  16:21:15  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\interrupt.obj TO .\Objects\interrupt PRINT (.\Listings\interrupt.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\interrupt.obj (INTERRUPT)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\interrupt (INTERRUPT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            REG     0008H     0008H     ABSOLUTE     "REG BANK 1"
+            IDATA   0010H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+            CODE    0006H     0033H     UNIT         ?PR?INT0?INTERRUPT
+            CODE    0039H     0024H     UNIT         ?PR?_DELAY?INTERRUPT
+            CODE    005DH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0069H     000BH     UNIT         ?PR?MAIN?INTERRUPT
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\interrupt (INTERRUPT)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?INT0?INTERRUPT
+  +--> ?PR?_DELAY?INTERRUPT
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP
+  +--> ?PR?MAIN?INTERRUPT
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\interrupt (INTERRUPT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        INTERRUPT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  B:00A8H.7       PUBLIC        EA
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/03/2021  16:21:15  PAGE 2
+
+
+  C:0069H         PUBLIC        main
+  B:00A8H.0       PUBLIC        EX0
+  B:0088H.0       PUBLIC        IT0
+  C:0039H         PUBLIC        _Delay
+  C:0006H         PUBLIC        int0
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        i
+  -------         DO            
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:0039H         LINE#         4
+  C:0039H         LINE#         5
+  C:0039H         LINE#         7
+  C:0042H         LINE#         8
+  C:004EH         LINE#         9
+  C:005CH         LINE#         10
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  C:0069H         LINE#         12
+  C:0069H         LINE#         13
+  C:0069H         LINE#         14
+  C:006BH         LINE#         15
+  C:006DH         LINE#         16
+  C:006FH         LINE#         17
+  C:006FH         LINE#         18
+  C:006FH         LINE#         19
+  C:0072H         LINE#         20
+  -------         ENDPROC       MAIN
+  -------         PROC          INT0
+  -------         DO            
+  D:000BH         SYMBOL        m
+  -------         ENDDO         
+  C:0006H         LINE#         23
+  C:000DH         LINE#         26
+  C:000FH         LINE#         27
+  C:001BH         LINE#         28
+  C:001BH         LINE#         29
+  C:001EH         LINE#         30
+  C:0025H         LINE#         31
+  C:0028H         LINE#         32
+  C:002FH         LINE#         33
+  C:0032H         LINE#         35
+  C:0034H         LINE#         36
+  -------         ENDPROC       INT0
+  -------         ENDMOD        INTERRUPT
+
+Program Size: data=17.0 xdata=0 code=116
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

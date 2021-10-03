@@ -96,8 +96,9 @@ int main()
 }
 ```
 <br>
-选择Project->Build Target(F7) 编译项目。二进制文件在工程目录的Objects/FlashLED.hex
-
+选择Project->Build Target(F7) 编译项目。二进制文件在工程目录的Objects/FlashLED.hex  
+  
+<br>
 <br>
 把编译好FlashLED.hex导入到proteus程序中. 双击单片机元器件，在"编辑元器件"界面导入hex文件.  
 <img src="./../res/res-pro-选择hex文件.png" width="80%" height="80%" title="res-pro-选择hex文件.png"></img>
