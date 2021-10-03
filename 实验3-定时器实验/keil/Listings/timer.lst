@@ -1,0 +1,57 @@
+C51 COMPILER V9.59.0.0   TIMER                                                             10/03/2021 19:08:50 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE TIMER
+OBJECT MODULE PLACED IN .\Objects\timer.obj
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.EXE timer.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\tim
+                    -er.lst) TABS(2) OBJECT(.\Objects\timer.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void Delay(unsigned int i)  //延迟函数, i位形式参数,不能赋初值
+   4          {
+   5   1        unsigned int j;
+   6   1        for( ; i > 0; i--)
+   7   1        for(j=0; j < 125; j--)   // 晶体振荡器位12MHz， j的选择与晶体振荡器频率有关
+   8   1        { ; }                     //空函数
+   9   1      }
+  10          
+  11          void main()                 //主函数
+  12          {
+  13   1        TMOD=0x50;                //设置计时器T1的方式1计数
+  14   1        TH1=0xFF;                 //向TH1写入初值的高8位
+  15   1        TL1=0xFC;                 //向TL1写入初值的低8位
+  16   1        EA=1;                   //总中断允许
+  17   1        ET1=1;                    //定时器T1中断允许
+  18   1        TR1=1;                    //启动定时器T1
+  19   1        
+  20   1        while(1);                 //等待计数中断
+  21   1      }
+  22          
+  23          void T1_int() interrupt 3   //T1中断函数
+  24          {
+  25   1        for(;;)
+  26   1        {
+  27   2          P1=0xff;                //8位LED全灭
+  28   2          Delay(500);
+  29   2          P1=0;                   //8位LED全亮
+  30   2          Delay(500);
+  31   2        }
+  32   1      }
+  33          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     90    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
