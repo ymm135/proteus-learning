@@ -3,25 +3,25 @@
 ### 实验介绍
 <br>
 <div align=center>
-<img src="../res/课程实验1-10/幻灯片13.PNG" width="60%" height="60%" title="创建工程"></img>  
+<img src="../res/课程实验1-10/幻灯片13.PNG" width="60%" height="60%" ></img>  
 </div>
 <br>
 
 <br>
 <div align=center>
-<img src="../res/课程实验1-10/幻灯片14.PNG" width="60%" height="60%" title="创建工程"></img>  
+<img src="../res/课程实验1-10/幻灯片14.PNG" width="60%" height="60%" ></img>  
 </div>
 <br>
 
 <br>
 <div align=center>
-<img src="../res/课程实验1-10/幻灯片15.PNG" width="60%" height="60%" title="创建工程"></img>  
+<img src="../res/课程实验1-10/幻灯片15.PNG" width="60%" height="60%" ></img>  
 </div>
 <br>
 
 <br>
 <div align=center>
-<img src="../res/课程实验1-10/幻灯片16.PNG" width="60%" height="60%" title="创建工程"></img>  
+<img src="../res/课程实验1-10/幻灯片16.PNG" width="60%" height="60%" ></img>  
 </div>
 <br>
 
@@ -39,7 +39,7 @@
 <br>
 <div align=center>
 <span>晶振器件频率设置</span><br>
-<img src="../res/实验3-晶振频率设置.png" width="50%" height="50%" title="创建工程"></img>  
+<img src="../res/实验3-晶振频率设置.png" width="50%" height="50%" ></img>  
 </div>
 <br>
 
@@ -58,7 +58,7 @@
 原理图如下: 
 <br>
 <div align=center>
-<img src="../res/实验3-原理图.png" width="80%" height="80%" title="创建工程"></img>  
+<img src="../res/实验3-原理图.png" width="80%" height="80%" ></img>  
 </div>
 <br>
 
@@ -67,7 +67,7 @@
 <br>
 <br>
 
-```
+```c
 #include <reg51.h>
 
 void Delay(unsigned int i)  //延迟函数, i位形式参数,不能赋初值

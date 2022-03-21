@@ -98,7 +98,7 @@ vdmagdi 安装
 <br>
 <br>
 
-```
+```c
 #include <reg51.h>
 #define uchar unsigned char
 

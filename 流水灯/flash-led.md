@@ -73,7 +73,7 @@ LED选择黄色
 
 
 flash_led.c 代码文件  
-```
+```c
 #include<reg51.h>
 #include<intrins.h>
 
