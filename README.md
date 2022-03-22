@@ -40,7 +40,7 @@ Proteus版本8.9
 * 实验九   [D/A转换实验]()
 * 实验十   [A/D转换实验]()
 
-> 额外增加 实验: [驱动电机](md/驱动电机.md)  
+> 额外增加 实验: [驱动电机](md/驱动电机实验.md)  
 <br>
 备注: 部分实验参考: [https://github.com/YAOYUKE/89C51](https://github.com/YAOYUKE/89C51)  
 
